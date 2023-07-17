@@ -1,0 +1,48 @@
+body
+{
+    background-color: white;
+}
+#top
+{
+    margin-right: 30px;
+    margin-left:30px;
+}
+
+#topnav
+{
+    text-align: center;
+}
+.logo
+{
+
+    float: left;
+}
+.logo > a > img
+{
+    height: 100px;
+    width: 200px;
+}
+.menu
+{
+    list-style-type: none;
+    padding: 10px;
+    font-size: 18px;
+    min-height: 38px;
+    float: right;
+}
+.menu > li
+{
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-right: 1px dashed #0F3364;
+}
+.menu > li:last-child
+{
+    border-right: none;
+}
+.menu a
+{
+    color:#0F3364;
+    text-decoration: none;
+}

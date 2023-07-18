@@ -1,11 +1,14 @@
 body
 {
-    background-color: white;
+    background-color: #F3F4E3;
+    font-family: 'Oswald', sans-serif;
 }
 #top
 {
-    margin-right: 30px;
-    margin-left:30px;
+
+    margin-bottom: 10px;
+    background-color: #F3F4E3;
+    width: 100%;
 }
 
 #topnav
@@ -25,8 +28,8 @@ body
 .menu
 {
     list-style-type: none;
-    padding: 10px;
-    font-size: 18px;
+    padding: 5px;
+    font-size: 24px;
     min-height: 38px;
     float: right;
 }
@@ -46,3 +49,126 @@ body
     color:#0F3364;
     text-decoration: none;
 }
+main
+{
+    background-color: white;
+}
+.categories
+{
+	margin-left: auto;
+	margin-right:auto;
+	width: 1000px;
+	text-align: center;
+	padding: 30px;
+    color: #0F3364;
+}
+.categories h1
+{
+    font-size: 40px;
+}
+.categories p
+{
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+.categoryleft
+{
+    display: flex;
+    background-color: #FFAA2A;
+    text-align: justify;
+    align-items: center;
+    margin-bottom: 75px;
+    width: 1000px;
+}
+.categoryright
+{
+    display: flex;
+    background-color: #0F3364;
+    color: #f5f5f5;
+    text-align: justify;
+    align-items: center;
+    margin-bottom: 75px;
+    width: 1000px;
+
+}
+.catimg
+{
+    display: inline-block;
+    width: 460px;
+    padding: 20px;
+
+}
+.catimg img
+{
+
+    width: 440px;
+}
+.cattxt
+{
+    display: inline-block;
+    width: 480px;
+    padding: 40px;
+}
+.cattxt h2
+{
+    font-size: 32px;
+    text-align: center;
+
+}
+.cattxt p
+{
+    margin-bottom: 40px;
+}
+.btn
+{
+    position: relative;
+    top: 50%;
+    left: 35%;
+    background-color: #9DECEF;
+	padding: 15px;
+	color: black;
+	font-size: 19px;
+	text-decoration: none;
+	border-radius: 5px;
+	min-width: 300px;
+
+}
+footer
+{
+    background-color: #9DECEF;
+    text-align: center;
+}
+.map
+{
+    font-size: 17px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 200px;
+    text-align: center;
+
+}
+.map a
+{
+    text-decoration: none;
+    color: #0F3364;
+}
+
+.info
+{
+    font-size: 22px;
+    display: inline-block;
+    margin-left: 200px;
+    text-align: justify;
+    color: #0F3364;
+}
+.info ul
+{
+    list-style-type: none;
+}
+.rights
+{
+    opacity: 0.8;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+

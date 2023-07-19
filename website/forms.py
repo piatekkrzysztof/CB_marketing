@@ -31,11 +31,11 @@ class UserCreateForm(forms.Form):
             raise ValidationError("Podana nazwa użytkownika jest już zajęta")
         return user_name
 
-class CreateCategoryForm(forms.Form):
+class CategoryCreateForm(forms.Form):
     name=forms.CharField(max_length=100)
     description = forms.CharField(widget=forms.Textarea)
 
-class CreateBlogPost(forms.Form):
+class BlogPostCreateForm(forms.Form):
     title = forms.CharField(max_length=250)
     text = forms.CharField(widget=forms.Textarea)
     category = forms.ChoiceField()
@@ -44,11 +44,11 @@ class CreateBlogPost(forms.Form):
         super().__init__(*args, **kwargs)
         self.fields['category'].choices=[(category.id, category.name) for category in Category.objects.all()]
 
-class CreateArticleCategoryForm(forms.Form):
+class ArticleCategoryCreateForm(forms.Form):
     name=forms.CharField(max_length=100)
     description = forms.CharField(widget=forms.Textarea)
 
-class CreateArticleForm(forms.Form):
+class ArticleCreateForm(forms.Form):
     title = forms.CharField(max_length=250)
     text = forms.CharField(widget=forms.Textarea)
     category = forms.ChoiceField()

@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+{% block content %}
+    <form method="POST">{% csrf_token %}
+
+            <p>{{ form.username }}</p>
+            <p>{{ form.password }}</p>
+            <p>{{ form.password2 }}</p>
+            <p>{{ form.first_name }}</p>
+            <p>{{ form.last_name }}</p>
+            <p>{{ form.email }}</p>
+        <input type="submit">
+
+
+
+    </form>
+{% endblock %}

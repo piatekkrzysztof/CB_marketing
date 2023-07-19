@@ -213,4 +213,9 @@ footer
     font-size: 24px;
     text-align: center;
 }
-
+.error
+{
+    text-align: center;
+    font-size: 18px;
+    color: #c00202;
+}

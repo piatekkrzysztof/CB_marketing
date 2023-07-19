@@ -16,7 +16,7 @@ class Article(models.Model):
     data = models.DateTimeField(auto_now_add=True)
     title = models.CharField(max_length=250)
     text = models.TextField()
-    category = models.ForeignKey('Category', null=True, on_delete=models.SET_NULL,)
+    category = models.ForeignKey('Article_category', null=True, on_delete=models.SET_NULL,)
 
 class Article_category(models.Model):
     name = models.CharField(max_length=100)
@@ -34,15 +34,17 @@ class Question(models.Model):
     ans_d = models.CharField()
     correct = models.CharField()
 
-class Profile(models.Model):
-    user = models.OneToOneField(
-        settings.AUTH_USER_MODEL,
-        on_delete=models.PROTECT,
-    )
+# class Profile(models.Model):
+#     user = models.OneToOneField(
+#         settings.AUTH_USER_MODEL,
+#         on_delete=models.CASCADE,
+#     )
+#     bio = models.TextField(max_length=500, blank=True)
+
 class Result(models.Model):
     category=models.ForeignKey(Question_category, on_delete=models.CASCADE)
     amount=models.IntegerField()
-    user=models.ForeignKey(Profile,null=True,on_delete=models.SET_NULL)
+    user=models.ForeignKey(User,null=True,on_delete=models.SET_NULL)
 
 
 

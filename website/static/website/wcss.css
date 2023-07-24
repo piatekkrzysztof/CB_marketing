@@ -219,3 +219,94 @@ footer
     font-size: 18px;
     color: #c00202;
 }
+.topblog
+{
+    width: 100%;
+
+}
+.addtime
+{
+    float: left;
+    font-size: 12px;
+}
+.categorytag
+{
+    float:right;
+    font-size: 12px;
+}
+.categorytag  a
+{
+    text-decoration: none;
+    color: #314a77;
+}
+.blogpost p
+{
+    font-size: 18px;
+    text-align: justify;
+
+}
+#blog
+{
+    margin-left: auto;
+	margin-right:auto;
+	width: 1000px;
+	text-align: center;
+	padding: 30px;
+    color: #0F3364;
+}
+.posts
+{
+    width: 1000px;
+}
+.posts h2
+{
+    font-size: 32px;
+}
+.posts p
+{
+    font-size: 22px;
+}
+.post
+{
+    display: inline-block;
+    margin-top: 20px;
+    border: #0F3364;
+    border-style: groove;
+    border-radius: 3px;
+    padding: 10px;
+
+}
+.postimg
+{
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 30px;
+
+}
+.postimg img
+{
+    width: 400px;
+    height: auto;
+
+}
+.posttxt
+{
+    width: 500px;
+    display: inline-block;
+    vertical-align: top;
+}
+.postbtn
+{
+    text-align: center;
+    padding-top: 20px;
+}
+.postbtn button
+{
+    background-color:#9DECEF ;
+    color: #0F3364;
+    padding: 10px 20px;
+    border: none;
+    cursor:pointer;
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+}

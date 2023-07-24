@@ -42,7 +42,7 @@ class BlogPostCreateForm(forms.Form):
 
     def __init__(self,*args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.fields['category'].choices=[(category.id, category.name) for category in Category.objects.all()]
+        self.fields['category'].choices=[(category.id, category.name) for category in BlogPostCategory.objects.all()]
 
 class ArticleCategoryCreateForm(forms.Form):
     name=forms.CharField(max_length=100)
@@ -55,4 +55,4 @@ class ArticleCreateForm(forms.Form):
 
     def __init__(self,*args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.fields['category'].choices=[(cat.id, cat.name) for cat in Article_category.objects.all()]
+        self.fields['category'].choices=[(cat.id, cat.name) for cat in ArticleCategory.objects.all()]

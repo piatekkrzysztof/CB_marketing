@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block content%}
+<div class="categories">
+    <div class="blogpost">
+
+        <header>
+            <h2>
+                {{ blogpost.title }}
+            </h2>
+            <figure>
+                <img src="{{image.photo.url}}" alt="{{ image.title }}" style="width: 100%">
+
+            </figure>
+        </header>
+        <div class="topblog">
+            <div class="addtime"><p>{{ blogpost.data|date:"d.n.Y  h:m" }}</p></div>
+            <div class="categorytag"><p> kategoria : <a href="x">{{ blogpost.category.name }}</a></p></div>
+            <div style="clear:both"></div>
+        </div>
+        <p>
+            {{ blogpost.text|linebreaks }}
+        </p>
+
+
+
+
+    </div>
+</div>s
+{% endblock %}

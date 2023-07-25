@@ -6,30 +6,30 @@
         <div class="posts">
         <header>
             <h2>
-                Witaj na naszym blogu!
+                Witamy was na sekcji, zawierającej artykuły
             </h2>
-            <p>Serdecznie zachecamy do zapoznania się z wpisami </p>
+            <p>Zapoznaj się z nimi aby poszerzyć swoją wiedze </p>
             {% if catname %}
             <p>z Kategorii : {{ catname.name }}</p>
             {% endif %}
         </header>
-            {% for p in blogpost %}
+            {% for a in articles %}
             <div class="post">
                     <div class="posttitle">
-                        <h2>{{ p.title }}</h2>
+                        <h2>{{ a.title }}</h2>
                     </div>
                     <div class="postimg">
-                        {% with p.blogpostimage_set.all|first as image %}
+                        {% with a.articleimage_set.all|first as image %}
                             {% if image %}
                                 <img src="{{ image.photo.url }}" alt="{{ image.title }}">
                             {% endif %}
                         {% endwith %}
                     </div>
                     <div class="posttxt">
-                        <p>{{ p.text|truncatewords:50 }}</p>
+                        <p>{{ a.text|truncatewords:50 }}</p>
                     </div>
                     <div class="postbtn">
-                        <a href="/blogpost/{{ p.id }}"><button>Czytaj dalej</button></a>
+                        <a href="/article/{{ a.id }}"><button>Czytaj dalej</button></a>
                     </div>
 
             </div>

@@ -1,0 +1,83 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block content%}
+<div class="categories">
+    <header>
+        <div class="slider">
+            <div class="slides">
+              <img src="{% static "website/img/marketing.png" %}" alt="Slide 1">
+              <img src="{% static "website/img/anal ityka.png" %}" alt="Slide 2">
+              <img src="{% static "website/img/Kontent.png" %}" alt="Slide 3">
+            </div>
+            <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </header>
+    <div class="abouttxt">
+        <h2>Pozwól że przybliżymy Ci zakres naszych usług</h2>
+
+        <h2>
+            Zarządzanie Social Media
+        </h2>
+        <p>
+            Nasza agencja oferuje pełen zakres usług związanych z zarządzaniem social media.
+            Tworzymy angażujące treści, monitorujemy aktywność na stronach i angażujemy się
+            z odbiorcami, aby zbudować silne relacje z Twoją marką.
+        </p>
+
+        <h2>
+            Content Marketing
+        </h2>
+        <p>
+            Tworzymy oryginalne, wartościowe treści, które przyciągają i angażują Twoją grupę docelową.
+            Nasz zespół ekspertów tworzy atrakcyjne treści na stronę internetową oraz na platformy social
+            media, które poprawiają pozycjonowanie w Google i budują zaufanie do marki.
+        </p>
+
+        <h2>
+            Kampanie Reklamowe Google Ads i Facebook Ads
+        </h2>
+        <p>
+            Wykorzystując naszą wiedzę i doświadczenie w tworzeniu kampanii Google Ads i Facebook
+            Ads, pomagamy zwiększyć zasięg Twojej firmy, przyciągnąć nowych klientów i zwiększyć sprzedaż.
+        </p>
+
+        <h2>
+             Zarządzanie stroną internetową i SEO
+        </h2>
+        <p>
+            Zarządzamy Twoją stroną internetową, dbając o jej aktualność, optymalizację SEO i łatwość nawigacji dla użytkowników.
+            Nasz zespół ekspertów SEO pracuje nad poprawą widoczności Twojej strony w wynikach wyszukiwania.
+        </p>
+
+        <h2>
+            Analityka Biznesowa z GA4
+        </h2>
+        <p>
+            Korzystając z Google Analytics 4, dostarczamy szczegółowe analizy i raporty, które pomagają zrozumieć zachowanie użytkowników
+            na Twojej stronie internetowej,a co za tym idzie - lepiej dostosować strategię marketingową do potrzeb Twojego biznesu.
+        </p>
+
+        <h2>
+            Kampanie E-mail Marketingowe
+        </h2>
+        <p>
+            Tworzymy skuteczne kampanie e-mail marketingowe, które pomagają utrzymać relacje z obecnymi klientami i przyciągnąć nowych.
+            W naszej Agencji Marketingowej łączymy kreatywność z analitycznym podejściem, aby dostarczyć skuteczne strategie marketingowe,
+            które prowadzą do realnych wyników. Nasza misja to pomóc Twojej firmie osiągnąć jej cele biznesowe poprzez skuteczny marketing cyfrowy.
+            Skontaktuj się z nami już dziś, aby dowiedzieć się, jak możemy pomóc Twojej firmie odnieść sukces w świecie cyfrowego marketingu.
+        </p>
+
+        <figure>
+            <img class ="logotext" src="{% static "website/img/LOGOandTEXT.png" %}" alt="logo">
+        </figure>
+    </div>
+
+</div>
+    <script src="{% static 'website/servslider.js' %}"></script>
+
+{% endblock %}

@@ -147,11 +147,11 @@ footer
 }
 .map
 {
-    font-size: 17px;
+    font-size: 16px;
     display: inline-block;
-    margin-top: 10px;
     margin-right: 200px;
     text-align: center;
+    vertical-align: top;
 
 }
 .map a
@@ -162,11 +162,12 @@ footer
 
 .info
 {
-    font-size: 22px;
+    font-size: 16px;
     display: inline-block;
     margin-left: 200px;
     text-align: justify;
     color: #0F3364;
+    vertical-align: top;
 }
 .info ul
 {
@@ -309,4 +310,39 @@ footer
     cursor:pointer;
     font-size: 24px;
     font-family: 'Oswald', sans-serif;
+}
+.slider
+{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.slides
+{
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+.slides img
+{
+    width: 100%
+}
+.dots
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.dot
+{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #9DECEF;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.dot.active
+{
+    background-color: #0F3364; !important;
 }

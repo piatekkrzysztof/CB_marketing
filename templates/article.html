@@ -7,7 +7,7 @@
 
         <header>
             <h2>
-                {{ blogpost.title }}
+                {{ article.title }}
             </h2>
             <figure>
                 <img src="{{image.photo.url}}" alt="{{ image.title }}" style="width: 100%">
@@ -15,12 +15,12 @@
             </figure>
         </header>
         <div class="topblog">
-            <div class="addtime"><p>{{ blogpost.data|date:"d.n.Y  h:m" }}</p></div>
-            <div class="categorytag"><p> kategoria : <a href="/blog/category/{{ blogpost.category.id }}">{{ blogpost.category.name }}</a></p></div>
+            <div class="addtime"><p>{{ article.data|date:"d.n.Y  h:m" }}</p></div>
+            <div class="categorytag"><p> kategoria : <a href="/articles/category/{{ article.category.id }}">{{ article.category.name }}</a></p></div>
             <div style="clear:both"></div>
         </div>
         <p>
-            {{ blogpost.text|linebreaks }}
+            {{ article.text|linebreaks }}
         </p>
 
 

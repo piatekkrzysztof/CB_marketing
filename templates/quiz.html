@@ -2,7 +2,7 @@
 {% block content %}
     <div class="categories">
         <div class="quiz">
-            <h2>Questions</h2>
+            <h2>Pytania</h2>
             <form method="post">
             {% csrf_token %}
             <ol>
@@ -20,7 +20,10 @@
 
             {% endfor %}
             </ol>
-            <button type="submit">Accept</button>
+            <div class="postbtn">
+               <button type="submit">Zakończ</button>
+            </div>
+
             </form>
         </div>
     </div>
